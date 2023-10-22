@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ecommerce-UI</title>
+    <style>
+        .ui_header{
+            color:rgb(255, 255, 255);
+            background-color: rgb(12, 77, 167);
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:5px 2px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .ui_itembar{
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+            background-color: rgb(226, 226, 226);
+            height:450px;
+        }
+        
+        .ui_item{
+            width:16%;
+            height:350px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding:10px;
+            padding-top: 20px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            align-items:center ;
+        }
+
+        .ui_item-img{
+            width:80%;
+        }
+
+        .ui_item-name{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            width:170px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .ui_item-button{
+            background-color: rgb(18, 101, 188);
+            color: rgb(255, 255, 255);
+            border-style:none ;
+            border-radius:0% ;
+            height:30px;
+            font-size: 15px;
+        }
+
+        .ui_footer{
+            background-color: rgb(255, 218, 85);
+        }
+
+        .ui_footer-title{
+            font-size: 65px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+            font-weight: 100;
+        }
+
+        .ui_footer-body{
+            display: flex;
+            flex-direction: row;
+        }
+        .ui_footer-icon{
+            height:110px;
+            padding: 20px;
+        }
+
+        .ui_footer-text{
+            display: flex; 
+            flex-direction: column;
+            line-height: 0%;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 100px;
+        }
+
+
+    </style>
+    <script src="ecommerce-UI.js"></script>
+</head>
+
+<body>
+
+    <div class="ui_header">
+        <span>Items</span>
+    </div>
+    <div class="ui_itembar">
+        <div class="ui_item">
+            <img class="ui_item-img" src="https://www.manua.ls/thumbs/products/l/1452509-samsung-galaxy-a03s.jpg" style="height:250px; object-fit: contain;">
+            <span class="ui_item-name">Samsung Galaxy A03s</span>
+            <button class="ui_item-button">Add to Cart</button>
+        </div>
+        <div class="ui_item">
+            <img class="ui_item-img" src="https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/admin-image/phones/nova-y70/list/list-blue.png " style="height:250px;   object-fit: contain;">
+            <span class="ui_item-name">Huawei Nova Y70</span>
+            <button class="ui_item-button">Add to Cart</button>
+        </div>
+        <div class="ui_item">
+            <img class="ui_item-img" src="https://smartmobile.lk/image/cache/catalog/Apple-iPhone-11s-500x500.jpg" style="height:250px; object-fit: contain;">
+            <span class="ui_item-name">Apple Ipone 11 64GB</span>
+            <button class="ui_item-button">Add to Cart</button>
+        </div>
+        <div class="ui_item">
+            <img class="ui_item-img" src="https://bsimg.nl/images/apple-iphone-13-pro-128gb-blauw_2.jpg/azcvWswuY_qV5XWnn7s5dJNhI0k%3D/fit-in/257x400/filters%3Aformat%28png%29%3Aupscale%28%29" style="height:250px; object-fit: contain;">
+            <span class="ui_item-name">Apple iPhone 13 Pro-128GB</span>
+            <button class="ui_item-button">Add to Cart</button>
+        </div>
+        <div class="ui_item">
+  
+  
+            <img class="ui_item-img" src="https://celltronics.lk/wp-content/uploads/2022/06/iPhone-SE-600x600.jpg" style="height:250px; object-fit: contain;">
+            <span class="ui_item-name">Apple iPhone SE 3 (2022) 64GB</span>
+            <button class="ui_item-button">Add to Cart</button>
+        </div>
+    </div>
+    <div class="ui_footer">
+        <div class="ui_footer-title">Cart</div>
+        <div class="ui_footer-body">
+           <img class="ui_footer-icon" src="https://www.svgrepo.com/show/500433/shopping-cart.svg">
+           <div class="ui_footer-text">
+           <p style="font-size: 20px;">Items</p>
+           <div style="margin:10px 0px; height:25px">
+                1.Samsung Galaxy A03s
+               <img src="	https://cdn-icons-png.flaticon.com/512/1828/1828843.png" style="height:20px; object-fit: contain; padding-left: 20px; ">
+            </div>
+            <div style="margin:10px 0px; height:25px">
+                2.Apple iPhone 11 64GB
+                <img src="	https://cdn-icons-png.flaticon.com/512/1828/1828843.png" style="height:20px; object-fit: contain; padding-left: 20px;">
+            </div>
+        </div>
+            
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
